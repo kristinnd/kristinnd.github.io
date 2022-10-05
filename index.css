@@ -1,0 +1,72 @@
+/*
+  ========================================
+  Box-sizing
+  ========================================
+*/
+*{
+    box-sizing: border-box;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+body{
+  background-image: linear-gradient(#b9d7ea, #d6e6f2);
+}
+.bakgrunnur{
+  background-color: #769fcd;
+  margin: 0px -10px;
+}
+header{
+  width: 300px;
+  margin: 0 auto;
+}
+header img{
+  max-width: 300px;
+}
+.nav{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+header ul{
+  list-style: none;
+  padding-left: 0px;
+}
+header li{
+  border: 1px black solid;
+  background-image:linear-gradient(rgb(221, 171, 255), rgb(181, 198, 255)) ;
+  padding: 10px;
+  margin: 5px 0px;
+}
+main{
+  width: 98%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 30em){
+
+}
+@media screen and (min-width: 48em){
+
+}
+@media screen and (min-width: 60em){
+
+}
+@media screen and (min-width: 80em){
+
+}
