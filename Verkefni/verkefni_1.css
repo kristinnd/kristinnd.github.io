@@ -1,0 +1,31 @@
+body {
+    font-family: Arial;
+    border: 1px solid red;
+    margin:0 auto;
+    width: 80%;
+    padding: 15px;
+}
+.blue{
+    color: blue;
+}
+h1{
+    color: green;
+}
+h2{
+    color: red;
+}
+.red{
+    color: red;
+}
+a:link{
+    color:yellow;
+}
+a:visited{
+    color: red;
+}
+a:hover{
+    color: green;
+}
+a:active{
+    color: blue;
+}

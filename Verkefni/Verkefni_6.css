@@ -1,0 +1,115 @@
+/*
+  ========================================
+  Box-sizing
+  ========================================
+*/
+*{
+    box-sizing: border-box;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+body{
+    background-image: linear-gradient(blue, rgb(125, 125, 255));
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.container{
+    color: white;
+}
+.verkefni{
+    text-align: right;
+    color:white;
+}
+nav ul{
+    list-style-type: none;
+    text-align: right;
+}
+nav li{
+    display: inline;
+    padding: 0px 10px;
+}
+main{
+    color: black;
+    font-family: 'Indie Flower', cursive;
+}
+.bakgrunnur{
+    background-image: linear-gradient(rgb(255, 202, 80), orange);
+    margin: -1em ;
+    padding: 30px;
+}
+header img{
+    width: 40%;
+    height: auto;
+    border-radius: 10%;
+}
+figure{
+    text-align: center;
+}
+.kassi{
+    background-color: beige;
+    padding: 1em;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color:lime;
+}
+.upp img{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 100%;
+}
+@media screen and (min-width: 80em) {
+    main{
+        color: black;
+        display: grid;
+        grid-template-columns:1fr 1fr ;
+        grid-template-areas: 
+        'article aside1'
+    }
+    article{
+        grid-area: article;
+    }
+    .aside1{
+        grid-area: aside1;
+        padding: 5px;
+    }
+    footer{
+        display: grid;
+        grid-template-areas: 
+        'vinstri mið haegri';
+    }
+    .haegri{
+        grid-area: haegri;
+    }
+    .mið{
+        grid-area: mið;
+    }
+    .vinstri{
+        grid-area: vinstri;
+        padding-top: 20px;
+    }
+    header,main,footer{
+        width: 65%;
+        margin: 0 auto;
+    }
+}

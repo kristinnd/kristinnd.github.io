@@ -1,0 +1,143 @@
+
+*{
+	box-sizing:border-box;
+}
+body,html{
+	margin:0;height:90vh;
+}
+body{
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:16% 25% auto 20%;
+	background: linear-gradient(to bottom, rgb(76, 76, 255), rgb(149, 149, 253));
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.col-1,.col-2{
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:auto;
+}
+.baklitur{
+    background: linear-gradient(rgb(255, 202, 80), orange);
+}
+@media screen and (min-width: 0em) {
+	header{
+		text-align: center;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		'mid'
+		'linkar';
+		color: white;
+	}
+	header h1{
+		grid-area: mid;
+	}
+	.linkar{
+		grid-area: linkar;
+	}
+	header li{
+		text-decoration: none;
+		display: inline;
+		padding: 0px 20px;
+	}
+	nav{
+		text-align: center;
+		color: white;
+	}
+	.baklitur{
+		position: relative;
+		top: 20px;
+	}
+	main{
+		padding: 0px 10px;
+	}
+	main a{
+		color: blue;
+	}
+	main a:hover{
+		color: blueviolet;
+	}
+	footer{
+		color: white;
+		position: relative;
+		top: 20px;
+		padding: 10px;
+	}
+	a{
+		text-decoration: none;
+		color: white;
+	}
+	a:hover{
+		color: rgb(190, 190, 255);
+	}
+	img{
+		position: fixed;
+		top: 10px;
+		right: 10px;
+		border-radius: 100%;
+	}
+}
+@media only screen and (min-width:60em){	
+	body{
+		grid-template-rows:16% 0.5% auto 33%;
+	}
+	header{
+		width: 60em;
+		color: white;
+		text-align: left;
+	}
+	nav{
+		display: flex;
+		flex-direction: row;
+		background-color: yellow;
+		height: 1.7em;
+	}
+	header ul{
+		text-align: right;
+	}
+	.linkar{
+		text-decoration: none;
+		text-align: right;
+		color: white;
+	}
+	main{
+		padding: 10px;
+	}
+	.navbar{
+		border: black 1px solid;
+		padding: 0px 10px;
+		color: blueviolet;
+		text-decoration: none;
+	}
+	hr{
+		display: none;
+	}
+	h4{text-align:right;}
+	nav,header,main,footer{
+		margin:0 auto; 
+		max-width:60em;
+		border:1px solid black;
+	}
+	.col-2{
+		display:grid;
+		grid-template-columns:1fr 1fr;
+		grid-template-rows:1fr 0.3fr;
+	}
+	
+	.col-3{display:grid;
+		grid-template-columns:1fr 1fr 1fr;}
+	img{
+		position: fixed;
+		bottom: 10px;
+		right: 10px;
+	}
+	footer{
+		padding: 10px;
+		color: white;
+	}
+	footer a{
+		color: white;
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,102 @@
+/*
+  ========================================
+  Box-sizing
+  ========================================
+*/
+*{
+    box-sizing: border-box;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+body{
+    background-image: linear-gradient(blue, rgb(125, 125, 255));
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.container{
+    color: white;
+}
+.verkefni{
+    text-align: right;
+    color:white;
+}
+nav ul{
+    list-style-type: none;
+    text-align: right;
+}
+nav li{
+    display: inline;
+    padding: 0px 10px;
+}
+.bakgrunnur{
+    background-image: linear-gradient(rgb(255, 202, 80), orange);
+    margin: -1em ;
+    padding: 30px;
+}
+main{
+    color: black;
+    display: grid;
+    grid-template-areas: 
+    'article aside1'
+    'article aside2';
+}
+article{
+    grid-area: article;
+}
+.aside1{
+    grid-area: aside1;
+}
+.aside2{
+    grid-area: aside2;
+}
+.kassi{
+    background-color: beige;
+    margin: 1em;
+    padding: 1em;
+}
+header,main,footer{
+    width: 65%;
+    margin: 0 auto;
+}
+footer{
+    display: grid;
+    grid-template-areas: 
+    'vinstri mið haegri';
+}
+.haegri{
+    grid-area: haegri;
+}
+.mið{
+    grid-area: mið;
+}
+.vinstri{
+    grid-area: vinstri;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color:lime;
+}
+img{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 100%;
+}

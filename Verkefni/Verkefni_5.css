@@ -1,0 +1,77 @@
+/*
+  ========================================
+  Box-sizing
+  ========================================
+*/
+*{
+    box-sizing: border-box;
+  }
+  
+  /*
+  ========================================
+  Clearfix
+  ========================================
+  */
+  .group:before,
+  .group:after {
+  content: "";
+  display: table;
+  }
+  .group:after {
+  clear: both;
+  }
+  .group {
+  clear: both;
+  *zoom: 1;
+  }
+  body{
+    color: white;
+    background-image: linear-gradient(crimson, purple);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+header{
+    text-align: center;
+}
+.baklitur{
+    background-image: linear-gradient(red, orange);
+}
+img{
+    background-image: linear-gradient(orange, red);
+    width: 100%;
+    height: auto;
+}
+main{
+    padding: 10px;
+}
+@media screen and (min-width: 30em) {
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+@media screen and (min-width: 48em) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'vinstri haegri';
+        padding: 10px;
+    }
+    .vinstri{
+        grid-area: vinstri;
+    }
+    .haegri{
+        grid-area: haegri;
+    }
+}
+@media screen and (min-width: 80em) {
+    main{
+        width: 80em;
+        margin: 0 auto;
+    }
+    footer{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
